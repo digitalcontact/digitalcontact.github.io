@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -15,6 +13,17 @@ h1 {
     width: 100%;
     max-width: 800px;
 }
+
+
+#apikey {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    align-self: left;
+}
+
 
 #context {
     width: 100%;
@@ -47,20 +56,17 @@ button:hover {
 }
 
 #chat-container {
-    width: 100%;
-    max-width: 800px;
     border: 2px solid #ccc;
     background-color: #fff;
     padding: 16px;
     overflow-y: auto;
-    height: 600px;
+    height: 50vh;
+    width: 80%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-bottom: 16px;
     box-sizing: border-box;
 }
-
-/* styles.css (continued) */
 
 .message {
     margin-bottom: 12px;
@@ -100,6 +106,6 @@ button:hover {
     }
 
     #chat-container {
-        height: 400px;
+        height: 600px;
     }
 }

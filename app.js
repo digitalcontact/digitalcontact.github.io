@@ -1,10 +1,12 @@
 // app.js
 
-const apiKey = "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";
 const apiUrl = "https://api.openai.com/v1/chat/completions";
 const md = new markdownit();
 
 async function generateText(prompt) {
+
+  const apiKey = document.getElementById("apikey").value;
+  
   const headers = {
     "Content-Type": "application/json",
     Authorization: `Bearer ${apiKey}`,
