@@ -6,6 +6,7 @@ const md = new markdownit();
 async function generateText(prompt) {
 
   const apiKey = document.getElementById("apikey").value;
+  const model = document.getElementById("model").value;
   
   const headers = {
     "Content-Type": "application/json",
@@ -16,7 +17,7 @@ async function generateText(prompt) {
     method: "POST",
     headers,
     body: JSON.stringify({
-      model: "gpt-3.5-turbo",
+      model: model,
       messages: prompt,
     }),
   });

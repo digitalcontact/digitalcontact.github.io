@@ -11,8 +11,13 @@
   <h1>Chatbot Interface</h1>
   <div>
     <label for="apikey">Api Key:</label>
-    <input type="password" id="apikey" placeholder="Enter API key"/>
+    <input type="password" id="apikey" required/>
   </div>
+  <label for="model">Selecciona tu modelo favorito:</label>
+  <select id="model">
+    <option value="gpt-3.5-turbo" selected>Normal</option>
+    <option value="gpt-4">Expensive</option>
+  </select>
   <div>
     <label for="context">Context:</label>
     <input type="text" id="context" />
